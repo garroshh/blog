@@ -20,9 +20,9 @@ script:
   # 运行hugo命令
   - hugo
 
-after_script:
+after_success:
   # 部署
-  - la -al
+  - ls -al
   - pwd
   - echo ${GH_REF}
   - cd ./public

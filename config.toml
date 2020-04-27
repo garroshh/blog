@@ -76,12 +76,12 @@ preserveTaxonomyNames = true
     Medium = "xxoo"
 
 [params.gitalk] # Github: https://github.com/gitalk/gitalk
-    clientID = "" # Your client ID
-    clientSecret = "" # Your client secret
-    repo = "" # The repo to store comments
-    owner = "" # Your GitHub ID
-    admin= "" # Required. Github repository owner and collaborators. (Users who having write access to this repository)
-    id= "location.pathname" # The unique id of the page.
+    clientID = "765aeb40ecd9058c4ab8" # Your client ID
+    clientSecret = "824af1ecb35c665e4d7fb379211bb748841e96a1" # Your client secret
+    repo = "garroshh.github.io" # The repo to store comments
+    owner = "garroshh" # Your GitHub ID
+    admin= "garroshh" # Required. Github repository owner and collaborators. (Users who having write access to this repository)
+    id= "garroshh.github.io" # The unique id of the page.
     labels= "gitalk" # Github issue labels. If you used to use Gitment, you can change it
     perPage= 15 # Pagination size, with maximum 100.
     pagerDirection= "last" # Comment sorting direction, available values are 'last' and 'first'.

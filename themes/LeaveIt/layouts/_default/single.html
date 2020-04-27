@@ -66,6 +66,7 @@
                 {{ . | safeHTML}}
             </p>
             {{ end }}
+            {{ partial "gitalk.html" . }}
     </div>
 
   
@@ -100,6 +101,7 @@
                      {{ template "_internal/disqus.html" . }}
                  {{ end }}
           {{ end }}
+          {{ partial "gitalk.html" . }}
     </div>
 </article>
 {{- end }}

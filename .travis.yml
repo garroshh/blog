@@ -22,6 +22,9 @@ script:
 
 after_script:
   # 部署
+  - la -al
+  - pwd
+  - echo ${GH_REF}
   - cd ./public
   - git init
   - git config user.name "garroshh"

@@ -11,30 +11,29 @@ go:
 
 install:
   # 安装最新的hugo
-  - wget https://github.com/gohugoio/hugo/releases/download/v0.69.2/hugo_0.69.2_Linux-64bit.deb
-  - sudo dpkg -i hugo*.deb
-  # 安装主题
-  - git clone https://github.com/liuzc/LeaveIt.git
+  - wget https://github.com/gohugoio/hugo/releases/download/v0.69.2/hugo_0.69.2_Linux-64bit.tar.gz
+  - tar xzvf hugo_0.69.2_Linux-64bit.tar.gz
+  - export PATH=$PATH:$PWD
 
 script:
   # 运行hugo命令
   - hugo
 
-after_success:
-  # 部署
-  - ls -al
-  - pwd
-  - echo ${GH_REF}
-  - cd ./public
-  - git init
-  - git config user.name "garroshh"
-  - git config user.email "garroshh.jia@gmail.com"
-  - git add .
-  - git commit -m "Update Blog By TravisCI With Build $TRAVIS_BUILD_NUMBER"
-  # Github Pages
-  - git push --force --quiet "https://$GITHUB_TOKEN@${GH_REF}" master:master
-  # Github Pages
-  - git push --quiet "https://$GITHUB_TOKEN@${GH_REF}" master:master --tags
+# after_success:
+#   # 部署
+#   - ls -al
+#   - pwd
+#   - echo ${GH_REF}
+#   - cd ./public
+#   - git init
+#   - git config user.name "garroshh"
+#   - git config user.email "garroshh.jia@gmail.com"
+#   - git add .
+#   - git commit -m "Update Blog By TravisCI With Build $TRAVIS_BUILD_NUMBER"
+#   # Github Pages
+#   - git push --force --quiet "https://$GITHUB_TOKEN@${GH_REF}" master:master
+#   # Github Pages
+#   - git push --quiet "https://$GITHUB_TOKEN@${GH_REF}" master:master --tags
 
 env:
  global:
@@ -42,12 +41,12 @@ env:
    - GH_REF: garroshh.github.io
 
 deploy:
+  repo: garroshh/garroshh.github.io # 部署GitHub的仓，不需要 https://github.com/ 前缀
   provider: pages # 重要，指定这是一份github pages的部署配置
   skip-cleanup: true # 重要，不能省略
-  local-dir: public # 静态站点文件所在目录
-  # target-branch: master # 要将静态站点文件发布到哪个分支
-  github-token: $GITHUB_TOKEN # 重要，$GITHUB_TOKEN是变量，需要在GitHub上申请、再到配置到Travis
-  # fqdn:  # 如果是自定义域名，此处要填
+  local-dir: public # 重要，静态站点文件所在目录
+  target-branch: master # 重要，要将静态站点文件推送到哪个分支
+  github-token: $GITHUB_TOKEN # 重要，需要在GitHub上申请、再到配置到Travis
   keep-history: true # 是否保持target-branch分支的提交记录
   on:
-    branch: master # 博客源码的分支
+    branch: master # 博客源码拉取的分支

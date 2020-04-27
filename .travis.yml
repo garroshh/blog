@@ -39,7 +39,7 @@ after_success:
 env:
  global:
    # Github Pages
-   - GH_REF: https://garroshh.github.io/
+   - GH_REF: garroshh.github.io
 
 deploy:
   provider: pages # 重要，指定这是一份github pages的部署配置

@@ -1,4 +1,4 @@
-baseURL = "https://blog.garroshh.me" # <head> 里面的 baseurl 信息，填你的博客地址
+baseURL = "https://garroshh.me" # <head> 里面的 baseurl 信息，填你的博客地址
 title = "Garroshh's Blog" # 浏览器的标题
 languageCode = "zh-cn" # 语言
 hasCJKLanguage = true # 开启可以让「字数统计」统计汉字
@@ -45,7 +45,7 @@ preserveTaxonomyNames = true
     author = 'Garroshh Jia' # Author's name
     avatar = "/images/me.png"           # Author's avatar
     subtitle = "A Simple Coder."                  # Subtitle
-    cdn_url = ""           # Base CDN URL
+    cdn_url = "https://cdn.jsdelivr.net/gh/garroshh/figurebed"         # Base CDN URL
     home_mode = "" # post or other
     enableGitalk = true # gitalk 评论系统
 

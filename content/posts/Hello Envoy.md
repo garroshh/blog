@@ -1,3 +1,9 @@
+---
+title: "Hello Envoy"
+date: 2020-04-30T18:18:41+08:00
+draft: false
+---
+
 # 目标
 
 - 配置Envoy代理转发流量到外部网址
@@ -76,12 +82,10 @@ docker run --name=proxy-with-admin -d -p 9901:9901 -p 10000:10000 -v $(pwd)/baid
 
 # 测试
 
-```bash
-curl localhost:10000
-```
+- curl localhost:10000
 
 ![image2019-12-26_16-42-49](https://cdn.jsdelivr.net/gh/garroshh/figurebed/img/image2019-12-26_16-42-49.png)
 
-管理控制台访问地址：http://172.16.99.100:9901/ （注：后续测试宿主机地址都为172.16.99.100）
+- 管理控制台访问地址：http://172.16.99.100:9901/ （注：后续测试宿主机地址都为172.16.99.100）
 
 ![image2019-12-26_16-51-46](https://cdn.jsdelivr.net/gh/garroshh/figurebed/img/image2019-12-26_16-51-46.png)

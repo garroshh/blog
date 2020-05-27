@@ -11,9 +11,14 @@ go:
 
 install:
   # 安装最新的hugo
-  - wget https://github.com/gohugoio/hugo/releases/download/v0.69.2/hugo_0.69.2_Linux-64bit.tar.gz
-  - tar xzvf hugo_0.69.2_Linux-64bit.tar.gz
-  - export PATH=$PATH:$PWD
+  # - wget https://github.com/gohugoio/hugo/releases/download/v0.69.2/hugo_0.69.2_Linux-64bit.tar.gz
+  # - tar xzvf hugo_0.69.2_Linux-64bit.tar.gz
+  # - export PATH=$PATH:$PWD
+  - mkdir $HOME/src
+  - cd $HOME/src
+  - git clone https://github.com/gohugoio/hugo.git
+  - cd hugo
+  - go install --tags extended
 
 script:
   # 运行hugo命令

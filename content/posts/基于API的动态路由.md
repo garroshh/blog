@@ -2,6 +2,9 @@
 title: "基于API的动态路由"
 date: 2020-05-06T15:27:22+08:00
 draft: false
+
+tags: ["Envoy", "实验"]
+categories: ["Envoy"]
 ---
 
 # 目标

@@ -1,0 +1,13 @@
+---
+baseurl: "https://garroshh.me/"
+DefaultContentLanguage: "zh-cn"
+hasCJKLanguage: true
+languageCode: "zh-cn"
+title: "garroshh's blog"
+theme: "leaveit"
+metaDataFormat: "yaml"
+algolia:
+  index: "garroshh.me"
+  key: "7dbc7389addbea71278969b9ed07d5d9"
+  appID: "ADS80CXUOB"
+---

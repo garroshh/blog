@@ -2,6 +2,9 @@
 title: "Helm3部署Istio 1.4"
 date: 2020-05-11T18:56:48+08:00
 draft: false
+
+tags: ["Istio", "实验"]
+categories: ["Istio"]
 ---
 
 # 1. 安装 Helm3

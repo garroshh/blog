@@ -1,5 +1,8 @@
 {{ define "content" -}}
 {{ $cdn_url := .Scratch.Get "cdn_url" }}
+<div class = "toc-wrapper">
+{{ partial "toc.html" . }}
+</div>
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
         <h1 class="post-title" itemprop="name headline">{{ .Title }}</h1>
@@ -21,6 +24,16 @@
                 </span>
                 {{- end }}
                 <span class="post-word-count">, {{ .WordCount }} words</span>
+                <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+                <!-- <span id="busuanzi_container_site_pv">
+                    本站总访问量<span id="busuanzi_value_site_pv"></span>次
+                </span>
+                <span id="busuanzi_container_site_uv">
+                    本站访客数<span id="busuanzi_value_site_uv"></span>人次
+                </span> -->
+                <span id="busuanzi_container_page_pv">
+                    <span id="busuanzi_value_page_pv"></span>次阅读
+                </span>
         </div>
     </header>
     <div class="post-content">

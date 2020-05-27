@@ -2,6 +2,9 @@
 title: "XDS API"
 date: 2020-05-11T14:41:33+08:00
 draft: false
+
+tags: ["Envoy", "原理"]
+categories: ["Envoy"]
 ---
 
 - [Listeners Discovery Service API — LDS](https://www.envoyproxy.io/docs/envoy/v1.9.0/configuration/listeners/lds#config-listeners-lds) to publish ports on which to listen for traffic

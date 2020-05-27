@@ -2,6 +2,9 @@
 title: "Kubeadm搭建Kubernetes集群"
 date: 2020-05-11T18:40:05+08:00
 draft: false
+
+tags: ["Istio", "实验"]
+categories: ["Istio"]
 ---
 
 # 1. 机器配置

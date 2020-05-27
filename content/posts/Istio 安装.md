@@ -2,6 +2,9 @@
 title: "Istio 安装"
 date: 2020-05-11T14:48:49+08:00
 draft: false
+
+tags: ["Istio", "实验"]
+categories: ["Istio"]
 ---
 
 # 三种方式

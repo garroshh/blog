@@ -2,6 +2,9 @@
 title: "实现Metrics和Tracing的能力"
 date: 2020-05-06T15:54:52+08:00
 draft: false
+
+tags: ["Envoy", "实验"]
+categories: ["Envoy"]
 ---
 
 # 目标
